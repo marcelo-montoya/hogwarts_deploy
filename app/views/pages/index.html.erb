@@ -1,0 +1,21 @@
+<h1>Bienvenido a Hogwarts</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Ubicación</th>
+      <th scope="col">Casa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <th scope="row"> <%= character.name %> </th>
+        <td> <%= character.location %> </td>
+        <td> <%= character.house %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
